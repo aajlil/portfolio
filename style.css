@@ -1022,3 +1022,60 @@ nav a:hover { color: #fff; }
         display: none;
     }
 }
+
+/* Apprentissages critiques et liens vers les projets */
+.learning-block { border-top: 1px solid #555; margin-top: 24px; padding-top: 18px; }
+.learning-block h4 { font-size: 13px; margin-bottom: 16px; color: #eee; }
+.ac-item { padding: 0 0 16px; margin-bottom: 16px; border-bottom: 1px solid #4a4a4a; }
+.ac-item:last-child { border-bottom: 0; margin-bottom: 0; padding-bottom: 0; }
+.ac-item strong { display: block; font-size: 13px; color: #f2f2f2; margin-bottom: 4px; }
+.ac-item > span { display: block; font-size: 12px; color: #bdbdbd; line-height: 1.5; }
+.linked-projects { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.linked-projects a { font-size: 11px; color: #eee; border: 1px solid #666; padding: 3px 7px; }
+.linked-projects a:hover { background: #444; }
+.project-link { display: inline-block; margin-top: 20px; font-size: 13px; border-bottom: 1px solid #777; padding-bottom: 3px; }
+.project-card:not(.featured) .project-link { color: #eee; }
+.project-card.featured .project-link { color: #fff; }
+.company-title { display: flex; align-items: center; gap: 10px; }
+.company-title .company { margin: 0; }
+
+/* Pages projet */
+.project-hero { padding: 100px 0 70px; border-bottom: 1px solid #555; }
+.project-hero .eyebrow { margin-bottom: 14px; }
+.project-hero h1 { font-size: clamp(40px, 6vw, 68px); line-height: 1.02; letter-spacing: -2px; max-width: 850px; margin-bottom: 20px; }
+.project-hero-intro { max-width: 760px; color: #c4c4c4; font-size: 17px; }
+.project-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 26px; }
+.project-layout { display: grid; grid-template-columns: 1.35fr .65fr; gap: 70px; align-items: start; }
+.project-main-image { width: 100%; max-height: 520px; object-fit: cover; border: 1px solid #555; margin-bottom: 38px; }
+.project-content h2 { font-size: 30px; margin: 45px 0 14px; }
+.project-content h2:first-child { margin-top: 0; }
+.project-content p { color: #c4c4c4; margin-bottom: 14px; }
+.project-content ul { color: #c4c4c4; padding-left: 20px; }
+.project-content li { margin-bottom: 7px; }
+.project-side { border: 1px solid #555; padding: 28px; position: sticky; top: 90px; background: #363636; }
+.project-side h3 { font-size: 18px; margin-bottom: 16px; }
+.project-side .ac-link { display: block; padding: 12px 0; border-top: 1px solid #555; font-size: 13px; color: #ddd; }
+.project-side .ac-link:hover { color: #fff; }
+.progression { border-top: 1px solid #555; margin-top: 20px; }
+.progression-row { padding: 20px 0; border-bottom: 1px solid #555; }
+.progression-row strong { display: block; font-size: 13px; margin-bottom: 6px; }
+.progression-row p { margin: 0; font-size: 13px; }
+.back-link { display: inline-block; margin-bottom: 30px; color: #bbb; font-size: 13px; }
+.back-link:hover { color: #fff; }
+.project-bottom { margin-top: 60px; padding-top: 30px; border-top: 1px solid #555; }
+.project-bottom a { border-bottom: 1px solid #777; font-size: 13px; }
+
+@media (max-width: 850px) { .project-layout { grid-template-columns: 1fr; gap: 40px; } .project-side { position: static; } }
+@media (max-width: 650px) { .project-hero { padding: 70px 0 50px; } .project-hero h1 { font-size: 42px; } .project-main-image { max-height: 330px; } }
+.inline-link { color: #fff; border-bottom: 1px solid #777; }
+.inline-link:hover { border-color: #fff; }
+.ac-page-list { border-top: 1px solid #555; }
+.ac-page-item { padding: 18px 0; border-bottom: 1px solid #555; }
+.ac-page-item strong { display:block; font-size:14px; margin-bottom:5px; }
+.ac-page-item p { margin:0; font-size:13px; }
+@media (max-width: 650px) {
+    .learning-block { margin-top: 18px; }
+    .ac-item { padding-bottom: 13px; margin-bottom: 13px; }
+    .project-meta { gap: 6px; }
+    .project-side { padding: 22px; }
+}
